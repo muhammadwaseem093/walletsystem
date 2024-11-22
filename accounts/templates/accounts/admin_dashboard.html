@@ -1,0 +1,14 @@
+<!-- templates/accounts/admin_dashboard.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, {{ user.username }}. You are logged in as an admin.</p>
+
+    <h3>User Statistics</h3>
+    <ul>
+        <li>Total Users: {{ total_users }}</li>
+        <!-- Add more statistics here if needed -->
+    </ul>
+{% endblock %}
